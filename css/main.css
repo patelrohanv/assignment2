@@ -1,0 +1,16 @@
+.heading {
+    background-color: lightgrey;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+body {
+    outline-offset: 10%;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+html {
+    background-color: lightskyblue
+}
