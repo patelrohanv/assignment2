@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/js/form.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+
+<body>
+    <title>Rohan's Assignment 2</title>
+    <h1>Rohan's Great Form</h1>
+    <form class="" action="index.html" method="post">
+        First Name:<br>
+        <input type="text" name="firstname">
+        <br>Last Name:<br>
+        <input type="text" name="lastname">
+        <br>Who is your favorite publisher?<br>
+        <input type="radio" name="publisher" value="Marvel"> Marvel<br>
+        <input type="radio" name="publisher" value="DC"> DC<br>
+        <input type="radio" name="publisher" value="Other" checked> Other
+        <br>Who is your favoriate character?<br>
+        <input type="text" name="character">
+        <br>What was the last comic book you read?<br>
+        <input type="text" name="lastcomic">
+        <br>When did you read this?<br>
+        <input type="datetime-local" name="lasttime">
+        <br>How many comics do you read each week?<br>
+        <input type="number" name="quantity" min="0">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
