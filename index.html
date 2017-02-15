@@ -7,31 +7,32 @@
     <script src="js/form.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Rohan's Assignment 2</title>
+    <title>Rohan's Great Form</title>
 </head>
 
 <body>
-    <h1 class="heading">Rohan's Great Form</h1>
-    <form class=" " action="index.html" method="post">
+    <h1 class="heading">Make Forms Great Again</h1>
+    <form name="assignment_form" class="form_two">
         First Name:<br>
-        <input type="text" name="firstname">
+        <input type="text" name="firstname" required>
         <br>Last Name:<br>
-        <input type="text" name="lastname">
+        <input type="text" name="lastname" required>
         <br>Who is your favorite publisher?<br>
         <input type="radio" name="publisher" value="Marvel"> Marvel<br>
         <input type="radio" name="publisher" value="DC"> DC<br>
         <input type="radio" name="publisher" value="Other" checked> Other
         <br>Who is your favoriate character?<br>
-        <input type="text" name="character">
+        <input type="text" name="character" required>
         <br>What was the last comic book you read?<br>
-        <input type="text" name="lastcomic">
+        <input type="text" name="lastcomic" required>
         <br>When did you read this?<br>
-        <input type="datetime-local" name="lasttime">
+        <input type="date" name="lasttime" required>
         <br>How many comics do you read each week?<br>
-        <input type="number" name="quantity" min="0">
-        <br>
-        <input type="submit" value="Submit">
+        <input type="number" name="quantity" min="0" required><br>
+        <input type="submit" onclick="checkForm()" value="Submit">
     </form>
+    <p id="output"></p>
+    <button type="button" onclick="reset()">Reset Form</button>
 </body>
 
 </html>
