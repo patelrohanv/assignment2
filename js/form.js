@@ -1,5 +1,4 @@
 function checkForm() {
-    var reject = false;
     var characterfirstname = document.assignment_form.firstname.value;
     var lastname = document.assignment_form.lastname.value;
     var publisher = document.assignment_form.publisher.value;
@@ -7,10 +6,6 @@ function checkForm() {
     var lastcomic = document.assignment_form.lastcomic.value;
     var quantity = document.assignment_form.quantity.value;
     if (quantity < 0 || containsNum(firstname) || containsNum(lastname) || containsNum(character)) {
-        reject = true;
-    }
-    alert(reject);
-    if (reject) {
         document.getElementById("output").innerHTML = "failure";
     } else {
         document.getElementById("output").innerHTML = "success";
